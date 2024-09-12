@@ -1,0 +1,197 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "poppins", sans-serif;
+}
+
+body{
+  background-color: black;
+}
+
+.main {
+  background-image: url("assets/images/bg.jpg");
+  background-position: center center;
+  background-size: max(1200px, 100vw); /*for zoom in and out effect */
+  background-repeat: no-repeat;
+  height: 70vh; /* vh-> viewport height   vw-> veiwport width */
+  position: relative;
+}
+.main .box {
+  height: 70vh;
+  width: 100%;
+  opacity: 0.65;
+  position: absolute;
+  top: 0;
+  background-color: black;
+}
+nav {
+  width: 60vw;
+  margin: auto;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  height: 62px;
+}
+nav img {
+  position: relative; /* netflix logo pops out of the bg image of main*/
+  z-index: 10;
+}
+nav button {
+  position: relative;
+  z-index: 10;
+}
+.hero {
+  height: calc(100% - 62px);  /*calc calcutes it*/
+  font-family: "Martel Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  gap: 20px; /*gap between all three span */
+  padding: 0 30px;
+}
+.hero> :first-child {
+  font-size: 35px;
+  font-weight: 900;
+  text-align: center;
+}
+.hero> :nth-child(2) {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+.hero> :nth-child(3) {
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+}
+.separation{
+  height: 4px;
+  background-color: rgb(60, 58, 58);
+}
+.btn{
+  padding: 3px 8px;
+  font-weight: 500;
+  color: white;
+  background-color: rgba(248, 243, 243, 0.126);
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.537);
+}
+.btn-red{
+ background-color: red;
+ color: white;
+ padding:5px 24px;
+ font-size:18px;
+ font-weight: 500;
+ border-radius: 5px;
+}
+.btn-red-sm{
+  background-color: red;
+  color: white;
+}
+.hero-buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.main input{
+  padding:8px 50px 9px 8px;
+  font-weight: 300;
+  font-size:10px;
+  background-color: rgba(23,23,23,0.7);  /*to make it transparent*/
+  border-radius: 5px;
+  color: white;
+  border:1px solid rgba(88, 87, 87, 0.3);
+}
+
+.first{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 70vw;
+  margin: auto;
+  color: white;
+}
+
+.secImg{
+  position: relative;
+}
+.secImg img{
+ max-width: 30vw;
+ position: relative;
+ z-index: 10;
+}
+.secImg video{
+  position: absolute;
+  top: 51px;
+  right: 0;
+  width:87% ;
+}
+
+section.first > div{
+  display: flex;
+  flex-direction: column;
+}
+
+.first > div :first-child{
+  font-size: 45px;
+  font-weight: bolder;
+}
+
+.first > div :nth-child(2){
+  font-size: 20px;
+}
+
+/*FAQ*/
+.faq h2{
+  text-align: center;
+  font-size: 38px;
+}
+.faq{
+  background-color: black;
+  color: white;
+  padding: 34px;
+}
+.faqbox:hover{
+ background-color: #414141;
+}
+.faqbox{
+  transition: all 1s ease-out;  /*when you hover over it color transition occurs for 1 second*/
+  display: flex;
+  color: white;
+  font-size: 20px;
+  justify-content: space-between;
+  background-color: #2d2d2d;
+  padding: 24px;
+  max-width: 60vw;
+  margin: 34px auto;
+  cursor: pointer;   /*when you put cursor over it, hand appears, being pointer*/
+}
+
+/*FOOTER*/
+footer{
+  color: white;
+  max-width: 50vw;
+  margin: auto;
+  padding: 14px;
+}
+.footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+}
+footer .questions{
+  padding: 34px 0;
+}
+.footer a{
+ font-size: 10px;
+ color: white;
+}
+.footer-item{
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
